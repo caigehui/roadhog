@@ -294,7 +294,7 @@ export function getCommonPlugins({ config, paths, appBuild, NODE_ENV }) {
 
   if (existsSync(join(paths.appSrc, 'index.ejs'))) {
     ret.push(new HtmlWebpackPlugin({
-      template: 'src/index.ejs',
+      template: 'app/index.ejs',
       inject: true,
     }));
   }

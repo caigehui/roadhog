@@ -16,7 +16,7 @@ export default function getPaths(cwd) {
     appBuild: resolveApp('dist'),
     appPublic: resolveApp('public'),
     appPackageJson: resolveApp('package.json'),
-    appSrc: resolveApp('src'),
+    appSrc: resolveApp('app'),
     appNodeModules: resolveApp('node_modules'),
     ownNodeModules: resolveOwn('../../node_modules'),
     dllNodeModule: resolveApp('node_modules/roadhog-dlls'),
