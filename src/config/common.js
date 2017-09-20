@@ -292,7 +292,7 @@ export function getCommonPlugins({ config, paths, appBuild, NODE_ENV }) {
   }
   ret.push(new webpack.DefinePlugin(defineObj));
 
-  if (existsSync(join(paths.appSrc, 'index.ejs'))) {
+  if (existsSync(join(paths.appSrc, 'index.ejs')) && NODE_ENV !== 'production') {
     ret.push(new HtmlWebpackPlugin({
       template: 'app/index.ejs',
       inject: true,
